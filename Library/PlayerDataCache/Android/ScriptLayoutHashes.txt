@@ -187,3 +187,6 @@ ec754a02ac4d8e511ad328173e39829f Assembly-CSharp.dll:HuaweiARUnitySDK.ARHandTrac
 267f827a31d8cf775925542779b8b873 Assembly-CSharp.dll:HuaweiARUnitySDK.ARWorldTrackingConfig
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Recorder.RecordManager
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Recorder.ScreenRecorder
+ce9204cdeee55f8f2015f576850de6a9 Assembly-CSharp.dll:.StreamVideoWithVideoPlayer
+d998f8bde307719d425d7e5dd9f0eb6a Assembly-CSharp.dll:.ScrollSnapRect
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.OnClickStart

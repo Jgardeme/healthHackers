@@ -1,0 +1,283 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-23:12
+MERGED from [:AndroidPermissionManager:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/AndroidPermissionManager.aar/707e8eb3a5265955753f316d9d4656a2/AndroidManifest.xml:2:1-13:12
+MERGED from [:HUAWEI AR Engine Plugin_Required:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine Plugin_Required.aar/65e5d05ff6907b1f08e632fa3d81617d/AndroidManifest.xml:2:1-17:12
+MERGED from [:HUAWEI AR Engine SDK_v1.3.0_minSDK14:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine SDK_v1.3.0_minSDK14.aar/8634747bb756c583f9fae870bcbaa44d/AndroidManifest.xml:2:1-27:12
+MERGED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:2:1-37:12
+MERGED from [:arcore_client:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/0bb6d1ae328c57a39aa9b48737201ca6/AndroidManifest.xml:17:1-46:12
+MERGED from [:emptymodulenoresizeable:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/emptymodulenoresizeable.aar/1294a0804c6d218cfbebf8edb124af83/AndroidManifest.xml:2:1-17:12
+MERGED from [:google_ar_optional:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/google_ar_optional.aar/748aa4156635f647288bf2496fe04292/AndroidManifest.xml:2:1-10:12
+MERGED from [:unityrecorder-release:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/unityrecorder-release.aar/bf6ca40bf50a0bc335e9713f4377f557/AndroidManifest.xml:2:1-14:12
+INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-23:12
+	package
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:2:70-93
+		INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml
+		INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-23:12
+		INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-23:12
+		INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:2:94-134
+application
+ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:3:3-15:17
+MERGED from [:HUAWEI AR Engine Plugin_Required:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine Plugin_Required.aar/65e5d05ff6907b1f08e632fa3d81617d/AndroidManifest.xml:11:5-15:19
+MERGED from [:HUAWEI AR Engine Plugin_Required:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine Plugin_Required.aar/65e5d05ff6907b1f08e632fa3d81617d/AndroidManifest.xml:11:5-15:19
+MERGED from [:HUAWEI AR Engine SDK_v1.3.0_minSDK14:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine SDK_v1.3.0_minSDK14.aar/8634747bb756c583f9fae870bcbaa44d/AndroidManifest.xml:14:5-25:19
+MERGED from [:HUAWEI AR Engine SDK_v1.3.0_minSDK14:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine SDK_v1.3.0_minSDK14.aar/8634747bb756c583f9fae870bcbaa44d/AndroidManifest.xml:14:5-25:19
+MERGED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:14:5-35:19
+MERGED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:14:5-35:19
+MERGED from [:arcore_client:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/0bb6d1ae328c57a39aa9b48737201ca6/AndroidManifest.xml:30:5-44:19
+MERGED from [:arcore_client:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/0bb6d1ae328c57a39aa9b48737201ca6/AndroidManifest.xml:30:5-44:19
+MERGED from [:emptymodulenoresizeable:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/emptymodulenoresizeable.aar/1294a0804c6d218cfbebf8edb124af83/AndroidManifest.xml:11:5-15:19
+MERGED from [:emptymodulenoresizeable:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/emptymodulenoresizeable.aar/1294a0804c6d218cfbebf8edb124af83/AndroidManifest.xml:11:5-15:19
+MERGED from [:google_ar_optional:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/google_ar_optional.aar/748aa4156635f647288bf2496fe04292/AndroidManifest.xml:7:5-9:19
+MERGED from [:google_ar_optional:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/google_ar_optional.aar/748aa4156635f647288bf2496fe04292/AndroidManifest.xml:7:5-9:19
+	android:label
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:3:16-48
+	android:resizeableActivity
+		ADDED from [:emptymodulenoresizeable:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/emptymodulenoresizeable.aar/1294a0804c6d218cfbebf8edb124af83/AndroidManifest.xml:11:18-52
+	android:icon
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:3:145-176
+	android:banner
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:3:107-144
+	android:isGame
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:3:85-106
+	android:usesCleartextTraffic
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:3:49-84
+activity#com.setik.kampertee.AndroidUtils
+ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:4:5-10:16
+	android:label
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:4:63-95
+	android:configChanges
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:4:96-253
+	android:name
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:4:15-62
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER+category:name:android.intent.category.LEANBACK_LAUNCHER
+ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:5:7-9:23
+action#android.intent.action.MAIN
+ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:6:9-61
+	android:name
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:6:17-58
+category#android.intent.category.LAUNCHER
+ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:7:9-69
+	android:name
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:7:19-66
+category#android.intent.category.LEANBACK_LAUNCHER
+ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:8:9-78
+	android:name
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:8:19-75
+meta-data#unityplayer.SkipPermissionsDialog
+ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:11:5-88
+MERGED from [:emptymodulenoresizeable:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/emptymodulenoresizeable.aar/1294a0804c6d218cfbebf8edb124af83/AndroidManifest.xml:12:9-14:36
+MERGED from [:emptymodulenoresizeable:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/emptymodulenoresizeable.aar/1294a0804c6d218cfbebf8edb124af83/AndroidManifest.xml:12:9-14:36
+	android:value
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:11:65-85
+	android:name
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:11:16-64
+meta-data#unity.build-id
+ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:12:5-101
+	android:value
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:12:46-98
+	android:name
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:12:16-45
+meta-data#unity.splash-mode
+ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:13:5-69
+	android:value
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:13:49-66
+	android:name
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:13:16-48
+meta-data#unity.splash-enable
+ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:14:5-74
+	android:value
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:14:51-71
+	android:name
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:14:16-50
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:16:3-77
+	android:name
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:16:20-74
+uses-feature#0x00020000
+ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:17:3-52
+	android:glEsVersion
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:17:17-49
+uses-permission#android.permission.INTERNET
+ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:18:3-65
+MERGED from [:HUAWEI AR Engine SDK_v1.3.0_minSDK14:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine SDK_v1.3.0_minSDK14.aar/8634747bb756c583f9fae870bcbaa44d/AndroidManifest.xml:12:5-67
+MERGED from [:HUAWEI AR Engine SDK_v1.3.0_minSDK14:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine SDK_v1.3.0_minSDK14.aar/8634747bb756c583f9fae870bcbaa44d/AndroidManifest.xml:12:5-67
+MERGED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:12:5-67
+MERGED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:18:20-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:19:3-79
+MERGED from [:unityrecorder-release:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/unityrecorder-release.aar/bf6ca40bf50a0bc335e9713f4377f557/AndroidManifest.xml:11:5-81
+MERGED from [:unityrecorder-release:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/unityrecorder-release.aar/bf6ca40bf50a0bc335e9713f4377f557/AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:19:20-76
+uses-feature#android.hardware.touchscreen
+ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:20:3-88
+	android:required
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:20:61-85
+	android:name
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:20:17-60
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:21:3-99
+	android:required
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:21:72-96
+	android:name
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:21:17-71
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:22:3-108
+	android:required
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:22:81-105
+	android:name
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:22:17-80
+uses-sdk
+INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml
+INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml
+MERGED from [:AndroidPermissionManager:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/AndroidPermissionManager.aar/707e8eb3a5265955753f316d9d4656a2/AndroidManifest.xml:7:5-9:41
+MERGED from [:AndroidPermissionManager:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/AndroidPermissionManager.aar/707e8eb3a5265955753f316d9d4656a2/AndroidManifest.xml:7:5-9:41
+MERGED from [:HUAWEI AR Engine Plugin_Required:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine Plugin_Required.aar/65e5d05ff6907b1f08e632fa3d81617d/AndroidManifest.xml:7:5-9:41
+MERGED from [:HUAWEI AR Engine Plugin_Required:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine Plugin_Required.aar/65e5d05ff6907b1f08e632fa3d81617d/AndroidManifest.xml:7:5-9:41
+MERGED from [:HUAWEI AR Engine SDK_v1.3.0_minSDK14:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine SDK_v1.3.0_minSDK14.aar/8634747bb756c583f9fae870bcbaa44d/AndroidManifest.xml:7:5-9:41
+MERGED from [:HUAWEI AR Engine SDK_v1.3.0_minSDK14:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine SDK_v1.3.0_minSDK14.aar/8634747bb756c583f9fae870bcbaa44d/AndroidManifest.xml:7:5-9:41
+MERGED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:7:5-9:41
+MERGED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:7:5-9:41
+MERGED from [:arcore_client:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/0bb6d1ae328c57a39aa9b48737201ca6/AndroidManifest.xml:26:5-28:41
+MERGED from [:arcore_client:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/0bb6d1ae328c57a39aa9b48737201ca6/AndroidManifest.xml:26:5-28:41
+MERGED from [:emptymodulenoresizeable:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/emptymodulenoresizeable.aar/1294a0804c6d218cfbebf8edb124af83/AndroidManifest.xml:7:5-9:41
+MERGED from [:emptymodulenoresizeable:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/emptymodulenoresizeable.aar/1294a0804c6d218cfbebf8edb124af83/AndroidManifest.xml:7:5-9:41
+MERGED from [:google_ar_optional:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/google_ar_optional.aar/748aa4156635f647288bf2496fe04292/AndroidManifest.xml:6:5-43
+MERGED from [:google_ar_optional:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/google_ar_optional.aar/748aa4156635f647288bf2496fe04292/AndroidManifest.xml:6:5-43
+MERGED from [:unityrecorder-release:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/unityrecorder-release.aar/bf6ca40bf50a0bc335e9713f4377f557/AndroidManifest.xml:7:5-9:41
+MERGED from [:unityrecorder-release:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/unityrecorder-release.aar/bf6ca40bf50a0bc335e9713f4377f557/AndroidManifest.xml:7:5-9:41
+INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml
+INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml
+		INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml
+		INJECTED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml
+uses-permission#android.permission.CAMERA
+ADDED from [:AndroidPermissionManager:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/AndroidPermissionManager.aar/707e8eb3a5265955753f316d9d4656a2/AndroidManifest.xml:11:5-65
+MERGED from [:HUAWEI AR Engine SDK_v1.3.0_minSDK14:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine SDK_v1.3.0_minSDK14.aar/8634747bb756c583f9fae870bcbaa44d/AndroidManifest.xml:11:5-65
+MERGED from [:HUAWEI AR Engine SDK_v1.3.0_minSDK14:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine SDK_v1.3.0_minSDK14.aar/8634747bb756c583f9fae870bcbaa44d/AndroidManifest.xml:11:5-65
+	android:name
+		ADDED from [:AndroidPermissionManager:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/AndroidPermissionManager.aar/707e8eb3a5265955753f316d9d4656a2/AndroidManifest.xml:11:22-62
+meta-data#com.huawei.ar.engine
+ADDED from [:HUAWEI AR Engine Plugin_Required:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine Plugin_Required.aar/65e5d05ff6907b1f08e632fa3d81617d/AndroidManifest.xml:12:9-14:40
+	android:value
+		ADDED from [:HUAWEI AR Engine Plugin_Required:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine Plugin_Required.aar/65e5d05ff6907b1f08e632fa3d81617d/AndroidManifest.xml:14:13-37
+	android:name
+		ADDED from [:HUAWEI AR Engine Plugin_Required:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine Plugin_Required.aar/65e5d05ff6907b1f08e632fa3d81617d/AndroidManifest.xml:13:13-48
+meta-data#hwc-theme
+ADDED from [:HUAWEI AR Engine SDK_v1.3.0_minSDK14:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine SDK_v1.3.0_minSDK14.aar/8634747bb756c583f9fae870bcbaa44d/AndroidManifest.xml:15:9-17:61
+	android:value
+		ADDED from [:HUAWEI AR Engine SDK_v1.3.0_minSDK14:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine SDK_v1.3.0_minSDK14.aar/8634747bb756c583f9fae870bcbaa44d/AndroidManifest.xml:17:13-58
+	android:name
+		ADDED from [:HUAWEI AR Engine SDK_v1.3.0_minSDK14:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine SDK_v1.3.0_minSDK14.aar/8634747bb756c583f9fae870bcbaa44d/AndroidManifest.xml:16:13-37
+activity#com.huawei.hiar.LoaderActivity
+ADDED from [:HUAWEI AR Engine SDK_v1.3.0_minSDK14:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine SDK_v1.3.0_minSDK14.aar/8634747bb756c583f9fae870bcbaa44d/AndroidManifest.xml:19:9-24:46
+	android:excludeFromRecents
+		ADDED from [:HUAWEI AR Engine SDK_v1.3.0_minSDK14:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine SDK_v1.3.0_minSDK14.aar/8634747bb756c583f9fae870bcbaa44d/AndroidManifest.xml:22:13-46
+	android:launchMode
+		ADDED from [:HUAWEI AR Engine SDK_v1.3.0_minSDK14:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine SDK_v1.3.0_minSDK14.aar/8634747bb756c583f9fae870bcbaa44d/AndroidManifest.xml:24:13-43
+	android:exported
+		ADDED from [:HUAWEI AR Engine SDK_v1.3.0_minSDK14:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine SDK_v1.3.0_minSDK14.aar/8634747bb756c583f9fae870bcbaa44d/AndroidManifest.xml:23:13-37
+	android:configChanges
+		ADDED from [:HUAWEI AR Engine SDK_v1.3.0_minSDK14:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine SDK_v1.3.0_minSDK14.aar/8634747bb756c583f9fae870bcbaa44d/AndroidManifest.xml:21:13-74
+	android:name
+		ADDED from [:HUAWEI AR Engine SDK_v1.3.0_minSDK14:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/HUAWEI AR Engine SDK_v1.3.0_minSDK14.aar/8634747bb756c583f9fae870bcbaa44d/AndroidManifest.xml:20:13-58
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:11:22-76
+activity#com.unity3d.ads.adunit.AdUnitActivity
+ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:15:9-19:74
+	android:hardwareAccelerated
+		ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:18:13-47
+	android:configChanges
+		ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:17:13-170
+	android:theme
+		ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:19:13-71
+	android:name
+		ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:16:13-65
+activity#com.unity3d.ads.adunit.AdUnitTransparentActivity
+ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:20:9-24:86
+	android:hardwareAccelerated
+		ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:23:13-47
+	android:configChanges
+		ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:22:13-170
+	android:theme
+		ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:24:13-83
+	android:name
+		ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:21:13-76
+activity#com.unity3d.ads.adunit.AdUnitTransparentSoftwareActivity
+ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:25:9-29:86
+	android:hardwareAccelerated
+		ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:28:13-48
+	android:configChanges
+		ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:27:13-170
+	android:theme
+		ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:29:13-83
+	android:name
+		ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:26:13-84
+activity#com.unity3d.ads.adunit.AdUnitSoftwareActivity
+ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:30:9-34:74
+	android:hardwareAccelerated
+		ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:33:13-48
+	android:configChanges
+		ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:32:13-170
+	android:theme
+		ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:34:13-71
+	android:name
+		ADDED from [:UnityAds:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/UnityAds.aar/2956d38e8c5ba53ca30f9acb41da9c63/AndroidManifest.xml:31:13-73
+activity#com.google.ar.core.InstallActivity
+ADDED from [:arcore_client:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/0bb6d1ae328c57a39aa9b48737201ca6/AndroidManifest.xml:33:9-39:80
+	android:excludeFromRecents
+		ADDED from [:arcore_client:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/0bb6d1ae328c57a39aa9b48737201ca6/AndroidManifest.xml:36:13-46
+	android:launchMode
+		ADDED from [:arcore_client:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/0bb6d1ae328c57a39aa9b48737201ca6/AndroidManifest.xml:38:13-43
+	android:exported
+		ADDED from [:arcore_client:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/0bb6d1ae328c57a39aa9b48737201ca6/AndroidManifest.xml:37:13-37
+	android:configChanges
+		ADDED from [:arcore_client:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/0bb6d1ae328c57a39aa9b48737201ca6/AndroidManifest.xml:35:13-74
+	android:theme
+		ADDED from [:arcore_client:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/0bb6d1ae328c57a39aa9b48737201ca6/AndroidManifest.xml:39:13-77
+	android:name
+		ADDED from [:arcore_client:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/0bb6d1ae328c57a39aa9b48737201ca6/AndroidManifest.xml:34:13-62
+meta-data#com.google.ar.core.min_apk_version
+ADDED from [:arcore_client:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/0bb6d1ae328c57a39aa9b48737201ca6/AndroidManifest.xml:41:9-43:41
+	android:value
+		ADDED from [:arcore_client:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/0bb6d1ae328c57a39aa9b48737201ca6/AndroidManifest.xml:43:13-38
+	android:name
+		ADDED from [:arcore_client:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/0bb6d1ae328c57a39aa9b48737201ca6/AndroidManifest.xml:42:13-62
+meta-data#com.google.ar.core
+ADDED from [:google_ar_optional:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/google_ar_optional.aar/748aa4156635f647288bf2496fe04292/AndroidManifest.xml:8:9-81
+	android:value
+		ADDED from [:google_ar_optional:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/google_ar_optional.aar/748aa4156635f647288bf2496fe04292/AndroidManifest.xml:8:54-78
+	android:name
+		ADDED from [:google_ar_optional:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/google_ar_optional.aar/748aa4156635f647288bf2496fe04292/AndroidManifest.xml:8:20-53
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from [:unityrecorder-release:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/unityrecorder-release.aar/bf6ca40bf50a0bc335e9713f4377f557/AndroidManifest.xml:12:5-71
+	android:name
+		ADDED from [:unityrecorder-release:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/unityrecorder-release.aar/bf6ca40bf50a0bc335e9713f4377f557/AndroidManifest.xml:12:22-68
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:2:1-23:12 reason: com.setik.kampertee requested WRITE_EXTERNAL_STORAGE
