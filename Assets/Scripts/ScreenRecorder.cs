@@ -114,30 +114,29 @@ namespace Recorder
                     break;
             }
         }
-        public void SaveVideoToGallery()
+        public void SaveVideoToGallery(string fileName)
         {
             //RECORD_AUDIO is declared inside plugin manifest but we need to request it manualy.Use call back to handle when user didn't accept the permsission
             if (!ScreenRecorder.IsPermitted(AndroidPermission.WRITE_EXTERNAL_STORAGE))//request this permission to write recorded file to disk
             {
                 ScreenRecorder.RequestPermission(AndroidPermission.WRITE_EXTERNAL_STORAGE);
-                onAllowCallback = () => { StartCoroutine(_SaveVideoToGallery()); };
+                onAllowCallback = () => { StartCoroutine(_SaveVideoToGallery(fileName)); };
                 onDenyCallback = () => { ShowToast("Need WRITE_EXTERNAL_STORAGE to save video"); };
                 onDenyAndNeverAskAgainCallback = () => { ShowToast("Need WRITE_EXTERNAL_STORAGE to save video"); };
             }
             else
-                StartCoroutine(_SaveVideoToGallery());
+                StartCoroutine(_SaveVideoToGallery(fileName));
         }
-        private IEnumerator _SaveVideoToGallery()
+        private IEnumerator _SaveVideoToGallery(string fileName)
         {
             yield return null;
 #if UNITY_ANDROID && !UNITY_EDITOR
-        System.DateTime now = System.DateTime.Now;
-        string fileName = "Video_" + now.Year + "_" + now.Month + "_" + now.Day + "_" + now.Hour + "_" + now.Minute + "_" + now.Second + ".mp4";
         while (!System.IO.File.Exists(Application.persistentDataPath + "/" + VIDEO_NAME + ".mp4"))
             yield return null;
         if (!System.IO.Directory.Exists(Application.persistentDataPath + GALLERY_PATH))
             System.IO.Directory.CreateDirectory(Application.persistentDataPath + GALLERY_PATH);
-        System.IO.File.Copy(Application.persistentDataPath + "/" + VIDEO_NAME + ".mp4", Application.persistentDataPath + GALLERY_PATH + "/" + fileName);
+
+        System.IO.File.Copy(Application.persistentDataPath + "/" + VIDEO_NAME + ".mp4", Application.persistentDataPath + GALLERY_PATH + "/" + fileName + ".mp4");
         ShowToast("Video is saved to Gallery");
         yield return null;
         RefreshGallery(Application.persistentDataPath + GALLERY_PATH + "/" + fileName);

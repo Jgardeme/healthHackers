@@ -8,6 +8,12 @@
     using HuaweiARInternal;
     using Common;
     using Recorder;
+    using UnityEditor;
+    using UnityEngine.Video;
+    using UnityEngine.UI;
+    using System.Net;
+    using System.IO;
+    using UnityEngine.Networking;
 
     public class FaceARController : MonoBehaviour
     {
@@ -16,11 +22,8 @@
 
         private List<ARFace> m_newFaces = new List<ARFace>();
         public RecordManager recordManager;
-
-        void Update()
-        {
-            _DrawFace();
-        }
+        private bool recording = false;
+        public string fileName = "";
 
         private void _DrawFace()
         {
@@ -29,18 +32,182 @@
             for(int i=0;i< m_newFaces.Count; i++)
             {
                 GameObject faceObject = Instantiate(facePrefabs, Vector3.zero, Quaternion.identity, transform);
-                faceObject.GetComponent<FaceVisualizer>().Initialize(m_newFaces[i]);
+                faceObject.GetComponent<FaceVisualizer>().Initialize(m_newFaces[i], fileName, recording);
             }
+        }
+
+        private void RequestToServer()
+        {
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(String.Format("http://api.openweathermap.org/data/2.5/weather?id={0}&APPID={1}", 11, "API-key"));
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            StreamReader reader = new StreamReader(response.GetResponseStream());
+            string jsonResponse = reader.ReadToEnd();
+            Debug.Log(jsonResponse);
         }
 
         public void startVid()
         {
+            //RequestToServer();
             recordManager.StartRecord();
+            recording = true;
+            System.DateTime now = System.DateTime.Now;
+            fileName = "Video_" + now.Year + "_" + now.Month + "_" + now.Day + "_" + now.Hour + "_" + now.Minute + "_" + now.Second;
+            _DrawFace();
         }
 
         public void stopVid()
         {
-            recordManager.StopRecord();
+            string path = "/storage/emulated/0/DCIM/VideoRecorders/";
+            Debug.Log(fileName);
+            recordManager.StopRecord(fileName);
+            recording = false;
+            //ARFrame.StopTracking();
+            //faceObject.SetActive(false);
+            StartCoroutine(waiter(path+fileName+".mp4"));
+            //_DrawFace();
+        }
+
+        private void ShowTheVideo(string file)
+        {
+            Debug.Log("START");
+            Handheld.PlayFullScreenMovie(file, Color.black, FullScreenMovieControlMode.Full);
+            /*GameObject camera = GameObject.Find("PreviewCamera");
+
+            //GameObject videoCamera = GameObject.Find("VideoCamera");
+
+            //Destroy(GameObject.Find("HuaweiAR Device"));//.SetActive(false);
+
+
+            //imagePlane = GameObject.Find("ImagePlane");
+
+            var videoPlayer = gameObject.AddComponent<UnityEngine.Video.VideoPlayer>();
+            videoPlayer.playOnAwake = false;
+            videoPlayer.renderMode = UnityEngine.Video.VideoRenderMode.CameraNearPlane;
+            //videoPlayer.targetCameraAlpha = 0.5F;
+            videoPlayer.url = file;
+            //videoPlayer.playbackSpeed = videoPlayer.playbackSpeed / 2.0F;
+            //videoPlayer.frame = 100;
+            videoPlayer.isLooping = true;
+
+
+            videoPlayer.loopPointReached += EndReached;
+            videoPlayer.Prepare();
+
+            while (!videoPlayer.isPrepared)
+            {
+                Debug.Log("Preparing video!");
+                //yield return new WaitForSeconds(1);
+            }
+
+            Debug.Log("DONE");
+            imagePlane.texture = videoPlayer.texture;
+
+            videoPlayer.Play();
+
+            while (videoPlayer.isPlaying)
+            {
+                Debug.Log("Playing video at " + Mathf.FloorToInt((float)videoPlayer.time));
+                yield return null;
+            }
+
+            Debug.Log("DONE PLAYING");
+            */
+
+            //camera.SetActive(false);
+            //videoCamera.SetActive(true);
+
+
+            /*MonoBehaviour[] components = facePrefabs.GetComponents<MonoBehaviour>();
+            foreach(MonoBehaviour c in components)
+            {
+                c.enabled = false;
+                Debug.Log(c.isActiveAndEnabled);
+            }*/
+
+            //Destroy(camera);
+            //GameObject videoCamera = GameObject.Find("")
+
+
+            //var videoPlayer = videoCamera.AddComponent<UnityEngine.Video.VideoPlayer>();
+            /* var videoPlayer = camera.AddComponent<UnityEngine.Video.VideoPlayer>();
+            videoPlayer.renderMode = UnityEngine.Video.VideoRenderMode.CameraNearPlane;
+            //videoPlayer.targetCameraAlpha = 0.5F;
+            videoPlayer.url = file;
+            //videoPlayer.playbackSpeed = videoPlayer.playbackSpeed / 2.0F;
+            //videoPlayer.frame = 100;
+            videoPlayer.isLooping = true;
+            videoPlayer.loopPointReached += EndReached;
+            videoPlayer.Play(); */
+        }
+
+        /*void EndReached(UnityEngine.Video.VideoPlayer vp)
+        {
+            Debug.Log("sdfsdfsdf");
+            //Destroy(vp);
+            //vp.Stop();
+        }*/
+
+        IEnumerator setRequest(string videoPath)
+        {
+            Debug.Log("START SENDING");
+            string right = readTextFile(Application.persistentDataPath + "/" + fileName + "_right.txt");
+            string left  = readTextFile(Application.persistentDataPath + "/" + fileName + "_left.txt");
+            byte[] videoData = System.IO.File.ReadAllBytes(videoPath);
+            string videoName = Path.GetFileName(videoPath);
+            WWWForm form = new WWWForm();
+
+            Debug.Log("videoData = " + videoData.Length);
+            Debug.Log("videoName = " + videoName);
+            Debug.Log("right = " + right);
+            Debug.Log("left = " + left);
+            Debug.Log("form = " + form);
+
+            form.AddBinaryData("video", videoData, videoName);
+            form.AddField("right", right);
+            form.AddField("left", left);
+
+            using (UnityWebRequest www = UnityWebRequest.Post("http://10.100.39.4:5000/uploader", form))
+            {
+                yield return www.SendWebRequest();
+
+                if (www.isNetworkError || www.isHttpError)
+                {
+                    Debug.Log("ERROR");
+                    Debug.Log(www.error);
+                    Debug.Log(www);
+                }
+                else
+                {
+                    Debug.Log("Form upload complete!");
+                }
+            }
+        }
+
+        IEnumerator waiter(string file)
+        {
+            while (!System.IO.File.Exists(file))
+            {
+                yield return new WaitForSeconds(1);
+            }
+
+            StartCoroutine(setRequest(file));
+            ShowTheVideo(file);
+        }
+
+        string readTextFile(string file_path)
+        {
+            StreamReader inp_stm = new StreamReader(file_path);
+            string inp_ln = "";
+
+            while (!inp_stm.EndOfStream)
+            {
+                inp_ln = inp_ln + inp_stm.ReadLine();
+                // Do Something with the input. 
+            }
+
+            inp_stm.Close();
+            return inp_ln;
         }
     }
 }
+

@@ -98,6 +98,20 @@
             return state;
         }
 
+        public static void PauseTracking()
+        {
+            ARSessionManager.Instance.Pause();
+        }
+
+        public static void StopTracking()
+        {
+            ARSessionManager.Instance.Stop();
+        }
+
+        public static void UpdateTracking()
+        {
+            ARSessionManager.Instance.Update();
+        }
 
         public static List<ARAnchor> GetAnchors(ARTrackableQueryFilter filter)
         {

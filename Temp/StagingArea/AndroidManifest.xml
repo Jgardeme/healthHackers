@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="fi.marius.ar2" android:installLocation="preferExternal">
-  <application android:label="@string/app_name" android:isGame="true" android:banner="@drawable/app_banner" android:icon="@mipmap/app_icon">
+  <application android:label="@string/app_name" android:usesCleartextTraffic="true" android:isGame="true" android:banner="@drawable/app_banner" android:icon="@mipmap/app_icon">
     <activity android:name="com.setik.kampertee.AndroidUtils" android:label="@string/app_name" android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -9,7 +9,7 @@
       </intent-filter>
     </activity>
     <meta-data android:name="unityplayer.SkipPermissionsDialog" android:value="true" />
-    <meta-data android:name="unity.build-id" android:value="d506be2d-35cb-42cd-a22e-7f5cf3207584" />
+    <meta-data android:name="unity.build-id" android:value="1bf3d9ff-828d-4066-9270-71c1aa855f8c" />
     <meta-data android:name="unity.splash-mode" android:value="0" />
     <meta-data android:name="unity.splash-enable" android:value="True" />
   </application>

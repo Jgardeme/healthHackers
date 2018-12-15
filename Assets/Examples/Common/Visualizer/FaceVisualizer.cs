@@ -12,9 +12,13 @@
         private ARFace m_face;
         StringBuilder sb = new StringBuilder();
         StringBuilder sb2 = new StringBuilder();
+        private string fileName;
+        private bool recording = false;
 
-        public void Initialize(ARFace face)
+        public void Initialize(ARFace face, string name, bool isRecording)
         {
+            recording = isRecording;
+            fileName = name;
             Debug.Log("Beginning");
             m_face = face;
             Update();
@@ -26,6 +30,8 @@
             sb2.Append("RIGHT");    
             sb.Remove(0, sb.Length);
             sb.Append("MY TEST");
+            Debug.Log("m_face.GetTrackingState() = " + m_face.GetTrackingState());
+            Debug.Log("recording = " + recording);
             if (null == m_face)
             {
                 sb.Append("Not detect face");
@@ -45,52 +51,55 @@
             sb.Remove(0, sb.Length);
             sb2.Remove(0, sb2.Length);
 
-            sb.Append("Face Pose: ");
-            sb.Append(m_face.GetPose().ToString());
-            sb.Append("\n");
-
-            var blendShapes = m_face.GetBlendShapeWithBlendName();
-            foreach(var bs in blendShapes)
+            if(recording)
             {
-                var key = bs.Key;
-                if (key.Contains("Right"))
-                {
-                    sb2.Append(key);
-                    sb2.Append(": ");
-                    sb2.Append(bs.Value);
-                    sb2.Append("\n");
-                }
-                else
-                {
-                    sb.Append(key);
-                    sb.Append(": ");
-                    sb.Append(bs.Value);
-                    sb.Append("\n");
-                }
 
-                /*var text = bs.Value + ";";
-                File.AppendAllText(Application.persistentDataPath + @"/file.txt", text);
-                */
+                sb.Append("Face Pose: ");
+                sb.Append(m_face.GetPose().ToString());
+                sb.Append("\n");
 
-                if (key.Contains("Animoji_Eye_Blink_Left"))
+                var blendShapes = m_face.GetBlendShapeWithBlendName();
+
+                foreach (var bs in blendShapes)
                 {
-                    var text = bs.Value + ";";
-                    File.AppendAllText(Application.persistentDataPath + @"/left.txt", text);
-                }
-                if (key.Contains("Animoji_Eye_Wide_Left"))
-                {
-                    var text = bs.Value + ";";
-                    File.AppendAllText(Application.persistentDataPath + @"/left.txt", text);
-                }
-                if (key.Contains("Animoji_Eye_Blink_Right"))
-                {
-                    var text = bs.Value + ";";
-                    File.AppendAllText(Application.persistentDataPath + @"/left.txt", text);
-                }
-                if (key.Contains("Animoji_Eye_Wide_Right"))
-                {
-                    var text = bs.Value + ";";
-                    File.AppendAllText(Application.persistentDataPath + @"/right.txt", text);
+                    var key = bs.Key;
+                    if (key.Contains("Right"))
+                    {
+                        sb2.Append(key);
+                        sb2.Append(": ");
+                        sb2.Append(bs.Value);
+                        sb2.Append("\n");
+                    }
+                    else
+                    {
+                        sb.Append(key);
+                        sb.Append(": ");
+                        sb.Append(bs.Value);
+                        sb.Append("\n");
+                    }
+
+
+
+                    if (key.Contains("Animoji_Eye_Blink_Left"))
+                    {
+                        var text = bs.Value + ";";
+                        File.AppendAllText(Application.persistentDataPath + "/"+ fileName+ "_right.txt", text);
+                    }
+                    if (key.Contains("Animoji_Eye_Wide_Left"))
+                    {
+                        var text = bs.Value + ";";
+                        File.AppendAllText(Application.persistentDataPath + "/" + fileName + "_left.txt", text);
+                    }
+                    /*if (key.Contains("Animoji_Eye_Blink_Right"))
+                    {
+                        var text = bs.Value + ";";
+                        File.AppendAllText(Application.persistentDataPath + @"/left.txt", text);
+                    }
+                    if (key.Contains("Animoji_Eye_Wide_Right"))
+                    {
+                        var text = bs.Value + ";";
+                        File.AppendAllText(Application.persistentDataPath + @"/right.txt", text);
+                    }*/
                 }
             }
             //File.AppendAllText(Application.persistentDataPath + @"/file.txt", "/n");

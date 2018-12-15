@@ -50,11 +50,13 @@ MERGED from [:google_ar_optional:] /Users/jgardeme/.gradle/caches/transforms-1/f
 	android:resizeableActivity
 		ADDED from [:emptymodulenoresizeable:] /Users/jgardeme/.gradle/caches/transforms-1/files-1.1/emptymodulenoresizeable.aar/1294a0804c6d218cfbebf8edb124af83/AndroidManifest.xml:11:18-52
 	android:icon
-		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:3:109-140
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:3:145-176
 	android:banner
-		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:3:71-108
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:3:107-144
 	android:isGame
-		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:3:49-70
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:3:85-106
+	android:usesCleartextTraffic
+		ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:3:49-84
 activity#com.setik.kampertee.AndroidUtils
 ADDED from /Users/jgardeme/joni_test/Temp/gradleOut/src/main/AndroidManifest.xml:4:5-10:16
 	android:label

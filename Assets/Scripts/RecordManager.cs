@@ -25,15 +25,15 @@ namespace Recorder
         }
 
 
-        public void StopRecord()
+        public void StopRecord(string fileName)
         {
             recorder.StopRecording();
-            StartCoroutine(DelaySaveVideo());
+            StartCoroutine(DelaySaveVideo(fileName));
         }
-        private IEnumerator DelaySaveVideo()
+        private IEnumerator DelaySaveVideo(string fileName)
         {
             yield return new WaitForSeconds(1);
-            recorder.SaveVideoToGallery();
+            recorder.SaveVideoToGallery(fileName);
         }
     }
 }

@@ -37,7 +37,8 @@
         android:icon="@mipmap/app_icon"
         android:isGame="true"
         android:label="@string/app_name"
-        android:resizeableActivity="false" >
+        android:resizeableActivity="false"
+        android:usesCleartextTraffic="true" >
         <activity
             android:name="com.setik.kampertee.AndroidUtils"
             android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
@@ -55,7 +56,7 @@
             android:value="true" />
         <meta-data
             android:name="unity.build-id"
-            android:value="d506be2d-35cb-42cd-a22e-7f5cf3207584" />
+            android:value="1bf3d9ff-828d-4066-9270-71c1aa855f8c" />
         <meta-data
             android:name="unity.splash-mode"
             android:value="0" />

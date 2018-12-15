@@ -1,11 +1,9 @@
 ﻿<Properties StartupConfiguration="{0EF34E0E-482A-BAD0-1FCB-DE457D57350B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Examples/FaceARSample/Scripts/FaceARController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/Android/AndroidManifest.xml">
     <Files>
-      <File FileName="Assets/Examples/FaceARSample/Scripts/FaceARController.cs" Line="42" Column="10" />
-      <File FileName="Assets/Examples/Common/Visualizer/FaceVisualizer.cs" Line="18" Column="36" />
-      <File FileName="Assets/HuaweiARUnitySDK/Scripts/ARFace.cs" Line="54" Column="36" />
-      <File FileName="Assets/HuaweiARUnitySDK/Scripts/ARFaceTrackingConfig.cs" Line="10" Column="54" />
-      <File FileName="Assets/HuaweiARUnitySDK/Scripts/ARHandTrackingConfig.cs" Line="24" Column="10" />
+      <File FileName="Assets/Examples/FaceARSample/Scripts/FaceARController.cs" Line="152" Column="40" />
+      <File FileName="Assets/Examples/Common/Visualizer/FaceVisualizer.cs" Line="92" Column="22" />
+      <File FileName="Assets/Plugins/Android/AndroidManifest.xml" Line="14" Column="12" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
