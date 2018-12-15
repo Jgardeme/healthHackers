@@ -180,6 +180,7 @@
                 else
                 {
                     Debug.Log("Form upload complete!");
+                    Debug.Log(www.downloadHandler.text);                     byte[] results = www.downloadHandler.data;                     Debug.Log(results.Length);                     Debug.Log(results);                     string path = "/storage/emulated/0/DCIM/VideoRecorders/";                     File.WriteAllBytes(path + fileName + "_output.mp4", results);                     while (!System.IO.File.Exists(path + fileName + "_output.mp4"))                     {                         yield return new WaitForSeconds(1);                     }                     ShowTheVideo(path + fileName + "_output.mp4");                     /*foreach (KeyValuePair<string, string> entry in www.GetResponseHeaders())                     {                         Debug.Log(entry.Value + "=" + entry.Key);                     }*/
                 }
             }
         }
