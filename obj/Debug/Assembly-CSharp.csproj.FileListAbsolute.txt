@@ -356,3 +356,6 @@
 /Users/jgardeme/joni_test/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
 /Users/jgardeme/joni_test/obj/Debug/Assembly-CSharp.dll
 /Users/jgardeme/joni_test/obj/Debug/Assembly-CSharp.pdb
+/Users/jgardeme/joni_test/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/jgardeme/joni_test/Temp/bin/Debug/Assembly-CSharp.pdb
+/Users/jgardeme/joni_test/obj/Debug/Assembly-CSharp.csproj.CopyComplete

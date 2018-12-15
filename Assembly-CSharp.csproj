@@ -74,7 +74,9 @@
     <Compile Include="Assets\Examples\Common\Visualizer\HandVisualizer.cs" />
     <Compile Include="Assets\Examples\Common\Visualizer\PointcloudVisualizer.cs" />
     <Compile Include="Assets\Examples\Common\Visualizer\TrackedPlaneVisualizer.cs" />
+    <Compile Include="Assets\Examples\FaceARSample\Scripts\CloseFirstCanvas.cs" />
     <Compile Include="Assets\Examples\FaceARSample\Scripts\FaceARController.cs" />
+    <Compile Include="Assets\Examples\FaceARSample\Scripts\RepeatIntro.cs" />
     <Compile Include="Assets\Examples\FaceARSample\Scripts\StartBttn.cs" />
     <Compile Include="Assets\Examples\FaceARSample\Scripts\StartCanvasScript.cs" />
     <Compile Include="Assets\Examples\FaceARSample\startscreen\ScrollSnapRect.cs" />

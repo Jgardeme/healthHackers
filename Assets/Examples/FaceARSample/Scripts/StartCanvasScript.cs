@@ -8,7 +8,6 @@ public class StartCanvasScript : MonoBehaviour
     void Start()
     {
         GameObject.Find("Canvas").GetComponent<Canvas>().enabled = false;
+        GameObject.Find("RepeatIntro").GetComponent<Canvas>().enabled = false;
     }
-
-  
 }

@@ -80,7 +80,7 @@
 
 
 
-                    if (key.Contains("Animoji_Eye_Blink_Left"))
+                    if (key.Contains("Animoji_Eye_Wide_Right"))
                     {
                         var text = bs.Value + ";";
                         File.AppendAllText(Application.persistentDataPath + "/"+ fileName+ "_right.txt", text);
@@ -90,19 +90,8 @@
                         var text = bs.Value + ";";
                         File.AppendAllText(Application.persistentDataPath + "/" + fileName + "_left.txt", text);
                     }
-                    /*if (key.Contains("Animoji_Eye_Blink_Right"))
-                    {
-                        var text = bs.Value + ";";
-                        File.AppendAllText(Application.persistentDataPath + @"/left.txt", text);
-                    }
-                    if (key.Contains("Animoji_Eye_Wide_Right"))
-                    {
-                        var text = bs.Value + ";";
-                        File.AppendAllText(Application.persistentDataPath + @"/right.txt", text);
-                    }*/
                 }
             }
-            //File.AppendAllText(Application.persistentDataPath + @"/file.txt", "/n");
 
 
             var faceGeometry = m_face.GetFraceGeometry();
