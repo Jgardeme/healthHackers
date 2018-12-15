@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Dec 16 00:13:42 EET 2018
+#Sun Dec 16 00:38:27 EET 2018
 124.path=bin/Data/Managed/UnityEngine.TextCoreModule.dll
 60.set=ASSET
 52.set=ASSET
