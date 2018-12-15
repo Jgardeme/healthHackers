@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/jgardeme/joni_test/Temp/gradleOut/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml",
+            "map": [
+                {
+                    "source": "/Users/jgardeme/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/0bb6d1ae328c57a39aa9b48737201ca6/res/values-fr-rCA/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "203,251,303,407,518",
+                        "endColumns": "47,51,103,110,76",
+                        "endOffsets": "250,302,406,517,594"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,107,163,271,386",
+                        "endColumns": "51,55,107,114,80",
+                        "endOffsets": "102,158,266,381,462"
+                    }
+                }
+            ]
+        }
+    ]
+}
