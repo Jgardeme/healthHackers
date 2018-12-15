@@ -150,21 +150,22 @@
         IEnumerator setRequest(string videoPath)
         {
             Debug.Log("START SENDING");
-            string right = readTextFile(Application.persistentDataPath + "/" + fileName + "_right.txt");
-            string left  = readTextFile(Application.persistentDataPath + "/" + fileName + "_left.txt");
-            byte[] videoData = System.IO.File.ReadAllBytes(videoPath);
-            string videoName = Path.GetFileName(videoPath);
+            (byte[] videoData, string videoName) = readFile(videoPath);
+            (byte[] rightData, string rightName) = readFile(Application.persistentDataPath + "/" + fileName + "_right.txt");
+            (byte[] leftData, string leftName) = readFile(Application.persistentDataPath + "/" + fileName + "_left.txt");
             WWWForm form = new WWWForm();
 
             Debug.Log("videoData = " + videoData.Length);
             Debug.Log("videoName = " + videoName);
-            Debug.Log("right = " + right);
-            Debug.Log("left = " + left);
+            Debug.Log("rightData = " + rightData.Length);
+            Debug.Log("rightName = " + rightName);
+            Debug.Log("leftData = " + leftData.Length);
+            Debug.Log("leftName = " + leftName);
             Debug.Log("form = " + form);
 
             form.AddBinaryData("video", videoData, videoName);
-            form.AddField("right", right);
-            form.AddField("left", left);
+            form.AddBinaryData("right_eye", rightData, rightName);
+            form.AddBinaryData("left_eye", leftData, leftName);
 
             using (UnityWebRequest www = UnityWebRequest.Post("http://10.100.39.4:5000/uploader", form))
             {
@@ -194,19 +195,11 @@
             ShowTheVideo(file);
         }
 
-        string readTextFile(string file_path)
+        (byte[], string) readFile(string file_path)
         {
-            StreamReader inp_stm = new StreamReader(file_path);
-            string inp_ln = "";
-
-            while (!inp_stm.EndOfStream)
-            {
-                inp_ln = inp_ln + inp_stm.ReadLine();
-                // Do Something with the input. 
-            }
-
-            inp_stm.Close();
-            return inp_ln;
+            byte[] data = System.IO.File.ReadAllBytes(file_path);
+            string Name = Path.GetFileName(file_path);
+            return (data, Name);
         }
     }
 }

@@ -1,4 +1,4 @@
-#Sat Dec 15 20:07:40 EET 2018
+#Sat Dec 15 20:35:16 EET 2018
 base.0=/Users/jgardeme/joni_test/Temp/gradleOut/build/intermediates/transforms/dexMerger/debug/1
 path.1=classes.dex
 renamed.1=classes2.dex
