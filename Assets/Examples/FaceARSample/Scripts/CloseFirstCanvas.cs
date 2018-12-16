@@ -8,7 +8,5 @@ public class CloseFirstCanvas : MonoBehaviour
     public void showRepeat()
     {
         GameObject.Find("RepeatIntro").GetComponent<Canvas>().enabled = true;
-        string file = "/storage/emulated/0/DCIM/VideoRecorders/20181215_174343.mp4";
-        Handheld.PlayFullScreenMovie(file, Color.black, FullScreenMovieControlMode.Full);
     }
 }
